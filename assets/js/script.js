@@ -204,6 +204,7 @@ taskBtn.onclick = function () {
     const deleteInClonedLi = clonedItem.querySelector('.delete');
     const spanInClonedLi = clonedItem.querySelector('.input-span');
     const checkInClonedLi = clonedItem.querySelector('.form-check-input');
+    
     attachDeleteEventListener(deleteInClonedLi)
     attachCheckEventListener(checkInClonedLi)
     attachEditEventListener(editInClonedLi, spanInClonedLi)
