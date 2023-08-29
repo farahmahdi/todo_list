@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(109.2deg, rgb(249, 174, 240) 6.5%, rgb(139, 144, 250) 97.1%);
+
+}
+@font-face {
+    font-family:'Dancing-font' ;
+    src: url(../fonts/DancingScript-SemiBold.woff);
+}
+@font-face {
+    font-family:'RobotoSlab-font' ;
+    src: url(../fonts/RobotoSlab-Medium.woff);
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container .card{
+    padding: 30px;
+   top:2vh;
+    gap: 20px;
+    width: 80%;
+    border: none;
+    background: linear-gradient(109.2deg, rgb(249, 174, 240) 6.5%, rgb(139, 144, 250) 97.1%);
+}
+.container .card h1{
+font-family:'Dancing-font' ;
+
+}
+.container .card form{
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.container .card form .form-floating{
+    width: 80%;
+}
+.container .card form .form-floating input{
+    outline: none;
+
+}
+.container .card form .form-floating input::placeholder{
+    font-family:'Dancing-font' ; 
+}
+.container .card form .form-floating label{
+    font-family:'Dancing-font' ; 
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: #8e2fc5;
+    
+}
+.container .card form button{
+    background-color: #ae2be2;
+    color: #ffff;
+    padding: 10px;
+    width: 19%;
+    height: 55px;
+    outline: none;
+    box-shadow: none;
+    font-family:'Dancing-font' ;
+}
+.li-style{
+    display: flex;
+    justify-content: space-between;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    margin-bottom: 2px;
+    height: 70px;
+}
+.img-style{
+    width: 20px;
+    height: 20px;
+}
+.div-input{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.iconsDiv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.input-prop:read-only{
+
+font-family:"RobotoSlab-font";
+width:371px;
+height: 50px;
+border-radius:4px;
+border:none;
+outline:none;
+}
+
+.input-prop{
+    font-family:"RobotoSlab-font";
+width:708px;
+height: 50px;
+border-radius:4px;
+    border:1px solid rgb(183 78 187 / 50%);
+    outline:none;
+}
+@keyframes circleAnimation {
+    0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+  }
+ .animate img{
+  animation: circleAnimation 1.5s linear infinite;
+  }
+@media only screen and (max-width: 767px) {
+    .container .card{
+        width: 100%;
+        top: 0;
+        padding: 10px 0;
+        gap: 15px;
+    }
+    .input-prop:read-only{
+        width: auto;
+    }
+    .input-prop{
+        width: auto;
+    }
+    .container .card h1{
+        font-size: 26px;
+    }
+}
+
+
